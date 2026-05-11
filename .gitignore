@@ -13,3 +13,7 @@ frontend/dist-ssr/
 
 .DS_Store
 .vscode/
+
+# Environment variables
+.env
+TrNi/.env

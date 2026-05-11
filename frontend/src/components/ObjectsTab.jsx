@@ -58,24 +58,31 @@ function ObjectsTab({ activeTab, objects, setObjects }) {
     return (
         <div className="metric-card">
             <h2 style={{ marginBottom: '1rem' }}>MongoDB Objects</h2>
-            {objects.map(obj => {
+            {objects.map((obj, index) => {
                 let parsedDetails = {};
                 try {
                     parsedDetails = typeof obj.details === 'string' ? JSON.parse(obj.details) : obj.details;
                 } catch (e) {
-                    parsedDetails = {
-                        "Error": "Corrupted Data Format"
-                    };
+                    parsedDetails = { "Error": "Corrupted Data Format" };
                 }
+
+                // Safely render any value — arrays/objects get stringified
+                const renderValue = (val) => {
+                    if (val === null || val === undefined) return '—'
+                    if (typeof val === 'object') return JSON.stringify(val)
+                    return String(val)
+                }
+
                 return (
-                    <div key={obj.id} style={{ padding: '1.5rem', borderBottom: '1px solid var(--glass-border)', background: 'var(--glass-bg)', borderRadius: '12px', marginBottom: '1rem' }}>
+                    <div key={obj._id || obj.id || index} style={{ padding: '1.5rem', borderBottom: '1px solid var(--glass-border)', background: 'var(--glass-bg)', borderRadius: '12px', marginBottom: '1rem' }}>
                         <h3 style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>{obj.name}</h3>
-                        {/* Switched from Grid to Flex Wrap so they look like neat property pills */}
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
                             {Object.entries(parsedDetails).map(([key, value]) => (
                                 <div key={key} style={{ display: 'flex', gap: '1rem', background: 'rgba(0,0,0,0.2)', padding: '0.5rem 1.25rem', borderRadius: '8px' }}>
                                     <span style={{ color: 'var(--text-secondary)', fontWeight: '500' }}>{key}</span>
-                                    <span style={{ color: 'var(--accent-primary)', fontWeight: 'bold' }}>{value}</span>
+                                    <span style={{ color: 'var(--accent-primary)', fontWeight: 'bold', wordBreak: 'break-word', maxWidth: '300px' }}>
+                                        {renderValue(value)}
+                                    </span>
                                 </div>
                             ))}
                         </div>

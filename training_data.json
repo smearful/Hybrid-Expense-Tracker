@@ -1,0 +1,1012 @@
+[
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Spent 450 on groceries today",
+    "assistant": "{\"amount\": 450.00, \"category\": \"Groceries\", \"date\": null, \"description\": \"\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Paid Rs.1200 for electricity bill on April 20",
+    "assistant": "{\"amount\": 1200.00, \"category\": \"Utilities\", \"date\": \"2026-04-20\", \"description\": \"Electricity bill\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Uber ride to airport cost me 350 bucks yesterday",
+    "assistant": "{\"amount\": 350.00, \"category\": \"Transport\", \"date\": null, \"description\": \"Uber ride to airport\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought lunch for the team, it was 2800 rupees",
+    "assistant": "{\"amount\": 2800.00, \"category\": \"Food\", \"date\": null, \"description\": \"Team lunch\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Netflix subscription renewed for 649",
+    "assistant": "{\"amount\": 649.00, \"category\": \"Subscriptions\", \"date\": null, \"description\": \"Netflix subscription renewal\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "medicine from pharmacy 180 on 22nd april",
+    "assistant": "{\"amount\": 180.00, \"category\": \"Healthcare\", \"date\": \"2026-04-22\", \"description\": \"Medicine from pharmacy\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Paid 5000 for gym membership this month",
+    "assistant": "{\"amount\": 5000.00, \"category\": \"Health & Fitness\", \"date\": null, \"description\": \"Monthly gym membership\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "coffee + sandwich at cafe = 320",
+    "assistant": "{\"amount\": 320.00, \"category\": \"Food\", \"date\": null, \"description\": \"Coffee and sandwich at cafe\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Rent paid 15000 on April 1st",
+    "assistant": "{\"amount\": 15000.00, \"category\": \"Rent\", \"date\": \"2026-04-01\", \"description\": \"Monthly rent\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "got fuel for 2200 rupees",
+    "assistant": "{\"amount\": 2200.00, \"category\": \"Transport\", \"date\": null, \"description\": \"Fuel\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Dinner at Barbeque Nation last night - 3400",
+    "assistant": "{\"amount\": 3400.00, \"category\": \"Food\", \"date\": null, \"description\": \"Dinner at Barbeque Nation\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "internet bill of 999 on april 5",
+    "assistant": "{\"amount\": 999.00, \"category\": \"Utilities\", \"date\": \"2026-04-05\", \"description\": \"Internet bill\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Bought new headphones for 2499",
+    "assistant": "{\"amount\": 2499.00, \"category\": \"Electronics\", \"date\": null, \"description\": \"New headphones\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "doctor visit copay 500 rupees 19 april",
+    "assistant": "{\"amount\": 500.00, \"category\": \"Healthcare\", \"date\": \"2026-04-19\", \"description\": \"Doctor visit copay\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "spent around 600 on stationery for office",
+    "assistant": "{\"amount\": 600.00, \"category\": \"Office Supplies\", \"date\": null,\"description\": \"Stationery for office\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "school fees 8500 paid today for April",
+    "assistant": "{\"amount\": 8500.00, \"category\": \"Education\", \"date\": null, \"description\": \"School fees for April\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Zomato order 420 bucks",
+    "assistant": "{\"amount\": 420.00, \"category\": \"Food\", \"date\": null, \"description\": \"Zomato food delivery\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "water bill came to 340 this month",
+    "assistant": "{\"amount\": 340.00, \"category\": \"Utilities\", \"date\": null, \"description\": \"Water bill\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Auto rickshaw 80 rupees",
+    "assistant": "{\"amount\": 80.00, \"category\": \"Transport\", \"date\": null, \"description\": \"Auto rickshaw fare\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought vegetables and fruits total 275",
+    "assistant": "{\"amount\": 275.00, \"category\": \"Groceries\", \"date\": null, \"description\": \"Vegetables and fruits\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Spotify 119 renewed on april 10",
+    "assistant": "{\"amount\": 119.00, \"category\": \"Subscriptions\", \"date\": \"2026-04-10\", \"description\": \"Spotify subscription renewal\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "birthday gift for friend 1500",
+    "assistant": "{\"amount\": 1500.00, \"category\": \"Gifts\", \"date\": null, \"description\": \"Birthday gift for friend\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "car service and oil change costed 3200 on 18th april",
+    "assistant": "{\"amount\": 3200.00, \"category\": \"Vehicle Maintenance\", \"date\": \"2026-04-18\", \"description\": \"Car service and oil change\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "flight ticket mumbai to delhi 5600",
+    "assistant": "{\"amount\": 5600.00, \"category\": \"Travel\", \"date\": null, \"description\": \"Flight ticket Mumbai to Delhi\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "hotel stay 2 nights 4800",
+    "assistant": "{\"amount\": 4800.00, \"category\": \"Travel\", \"date\": null, \"description\": \"Hotel stay for 2 nights\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "paid 200 for parking near the mall",
+    "assistant": "{\"amount\": 200.00, \"category\": \"Transport\", \"date\": null, \"description\": \"Parking fee near mall\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Amazon order - USB hub and mouse pad 890 rupees",
+    "assistant": "{\"amount\": 890.00, \"category\": \"Electronics\", \"date\": null, \"description\": \"Amazon order: USB hub and mouse pad\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "recharge prepaid mobile 299",
+    "assistant": "{\"amount\": 299.00, \"category\": \"Utilities\", \"date\": null, \"description\": \"Prepaid mobile recharge\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "snacks and cold drinks at the movie theater 600",
+    "assistant": "{\"amount\": 600.00, \"category\": \"Entertainment\", \"date\": null, \"description\": \"Snacks and drinks at movie theater\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "movie tickets for 2 people 700 rupees on april 21",
+    "assistant": "{\"amount\": 700.00, \"category\": \"Entertainment\", \"date\": \"2026-04-21\", \"description\": \"Movie tickets for 2 people\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "weekly grocery run - milk eggs bread butter total 560",
+    "assistant": "{\"amount\": 560.00, \"category\": \"Groceries\", \"date\": null, \"description\": \"Weekly grocery run: milk, eggs, bread, butter\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Haircut + beard trim at salon 350",
+    "assistant": "{\"amount\": 350.00, \"category\": \"Personal Care\", \"date\": null, \"description\": \"Haircut and beard trim at salon\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "donated 1000 to NGO on april 15",
+    "assistant": "{\"amount\": 1000.00, \"category\": \"Donations\", \"date\": \"2026-04-15\", \"description\": \"Donation to NGO\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought new running shoes 2999",
+    "assistant": "{\"amount\": 2999.00, \"category\": \"Clothing\", \"date\": null, \"description\": \"New running shoes\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "plumber charges 800 for fixing kitchen sink",
+    "assistant": "{\"amount\": 800.00, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Plumber charges for fixing kitchen sink\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "train ticket to Pune 450",
+    "assistant": "{\"amount\": 450.00, \"category\": \"Travel\", \"date\": null, \"description\": \"Train ticket to Pune\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "insurance premium paid 7500 on 1st april",
+    "assistant": "{\"amount\": 7500.00, \"category\": \"Insurance\", \"date\": \"2026-04-01\", \"description\": \"Insurance premium payment\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "3 kg chicken + 1 kg paneer from butcher 980 bucks",
+    "assistant": "{\"amount\": 980.00, \"category\": \"Groceries\", \"date\": null, \"description\": \"3kg chicken and 1kg paneer from butcher\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "paid 12000 for laptop repair screen replacement",
+    "assistant": "{\"amount\": 12000.00, \"category\": \"Electronics\", \"date\": null, \"description\": \"Laptop repair: screen replacement\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "tuition fee for kids 3500 on april 3",
+    "assistant": "{\"amount\": 3500.00, \"category\": \"Education\", \"date\": \"2026-04-03\", \"description\": \"Tuition fee for kids\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "gas cylinder booked and delivered 950",
+    "assistant": "{\"amount\": 950.00, \"category\": \"Utilities\", \"date\": null, \"description\": \"LPG gas cylinder delivery\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Amazon prime yearly plan 1499",
+    "assistant": "{\"amount\": 1499.00, \"category\": \"Subscriptions\", \"date\": null, \"description\": \"Amazon Prime yearly subscription\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "cricket bat for son 1200, also bought gloves for 400",
+    "assistant": "{\"amount\": 1600.00, \"category\": \"Sports\", \"date\": null, \"description\": \"Cricket bat (1200) and gloves (400) for son\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "office cab monthly pass renewed for 2500",
+    "assistant": "{\"amount\": 2500.00, \"category\": \"Transport\", \"date\": null, \"description\": \"Office cab monthly pass renewal\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "wedding gift for cousin Rs 5000 on 17 april",
+    "assistant": "{\"amount\": 5000.00, \"category\": \"Gifts\", \"date\": \"2026-04-17\", \"description\": \"Wedding gift for cousin\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "sunscreen moisturizer face wash from nykaa 1100",
+    "assistant": "{\"amount\": 1100.00, \"category\": \"Personal Care\", \"date\": null, \"description\": \"Sunscreen, moisturizer, face wash from Nykaa\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "street food bhel puri vada pav total 90 rupees",
+    "assistant": "{\"amount\": 90.00, \"category\": \"Food\", \"date\": null, \"description\": \"Street food: bhel puri and vada pav\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought 2 t-shirts and a jeans total 2300",
+    "assistant": "{\"amount\": 2300.00, \"category\": \"Clothing\", \"date\": null, \"description\": \"2 t-shirts and 1 jeans\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "AWS bill for march 3200 paid on april 2",
+    "assistant": "{\"amount\": 3200.00, \"category\": \"Cloud Services\", \"date\": \"2026-04-02\", \"description\": \"AWS bill for March\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "salary advance taken 10000",
+    "assistant": "{\"amount\": 10000.00, \"category\": \"Miscellaneous\", \"date\": null, \"description\": \"Salary advance\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "breakfast omelette and chai at dhaba 65",
+    "assistant": "{\"amount\": 65.00, \"category\": \"Food\", \"date\": null, \"description\": \"Breakfast: omelette and chai at dhaba\"}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "D-Mart receipt: milk 45, bread 35, eggs 120, butter 90, soap 60, shampoo 180, total 530",
+    "assistant": "{\"model\": \"Object\", \"name\": \"D-Mart Grocery Receipt\", \"details\": {\"store\": \"D-Mart\", \"items\": [{\"name\": \"milk\", \"price\": 45}, {\"name\": \"bread\", \"price\": 35}, {\"name\": \"eggs\", \"price\": 120}, {\"name\": \"butter\", \"price\": 90}, {\"name\": \"soap\", \"price\": 60}, {\"name\": \"shampoo\", \"price\": 180}], \"total\": 530}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Goa trip expenses: flight 6200, hotel 3 nights 9000, food 4500, taxi 1800, activities 2500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Goa Trip Expenses\", \"details\": {\"trip\": \"Goa\", \"breakdown\": {\"flight\": 6200, \"hotel_3_nights\": 9000, \"food\": 4500, \"taxi\": 1800, \"activities\": 2500}, \"total\": 24000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Office farewell party: food 3200, cake 800, decorations 500, gift 1500 split among 8 people",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Office Farewell Party\", \"details\": {\"event\": \"Farewell party\", \"items\": {\"food\": 3200, \"cake\": 800, \"decorations\": 500, \"gift\": 1500}, \"total\": 6000, \"split_among\": 8, \"per_person\": 750}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Petty cash log week of Apr 14: tea coffee 200, printing 150, courier 80, cleaning 100, misc 70",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Petty Cash Log Week Apr-14\", \"details\": {\"week\": \"2026-04-14\", \"entries\": {\"tea_coffee\": 200, \"printing\": 150, \"courier\": 80, \"cleaning\": 100, \"misc\": 70}, \"total\": 600}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Restaurant bill Paradise: biryani x2 560, raita 60, dessert 120, lassi x2 100, service charge 84, total 924",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Paradise Restaurant Bill\", \"details\": {\"restaurant\": \"Paradise\", \"items\": [{\"name\": \"biryani x2\", \"price\": 560}, {\"name\": \"raita\", \"price\": 60}, {\"name\": \"dessert\", \"price\": 120}, {\"name\": \"lassi x2\", \"price\": 100}, {\"name\": \"service charge\", \"price\": 84}], \"total\": 924}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Home renovation: painter 8000, tiles 12000, labour 5000, cement and sand 3500, total 28500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Home Renovation Costs\", \"details\": {\"category\": \"renovation\", \"breakdown\": {\"painter\": 8000, \"tiles\": 12000, \"labour\": 5000, \"materials\": 3500}, \"total\": 28500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Medical bill Apollo: consultation 700, blood test 1200, X-ray 900, medicines 560, total 3360",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Apollo Medical Bill\", \"details\": {\"hospital\": \"Apollo\", \"items\": {\"consultation\": 700, \"blood_test\": 1200, \"xray\": 900, \"medicines\": 560}, \"total\": 3360}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Monthly utilities: electricity 1400, water 340, gas cylinder 950, internet 999, mobile 299",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Monthly Utility Bills\", \"details\": {\"month\": \"April 2026\", \"bills\": {\"electricity\": 1400, \"water\": 340, \"gas_cylinder\": 950, \"internet\": 999, \"mobile\": 299}, \"total\": 3988}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Business trip Bangalore: flight 4800, hotel 2 nights 6000, meals 1800, cab 900, total 13500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Bangalore Business Trip\", \"details\": {\"trip\": \"Bangalore\", \"purpose\": \"business\", \"breakdown\": {\"flight\": 4800, \"hotel_2nights\": 6000, \"meals\": 1800, \"cab\": 900}, \"total\": 13500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Diwali shopping: clothes 5500, sweets 1200, crackers 800, gifts 3000, diyas 200",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Diwali Shopping\", \"details\": {\"festival\": \"Diwali\", \"items\": {\"clothes\": 5500, \"sweets\": 1200, \"crackers\": 800, \"gifts\": 3000, \"diyas\": 200}, \"total\": 10700}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Roommate shared expenses April: rent 18000, wifi 999, electricity 1400, maid 1500 split 3 ways",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Roommate Shared Expenses April\", \"details\": {\"month\": \"April 2026\", \"shared_expenses\": {\"rent\": 18000, \"wifi\": 999, \"electricity\": 1400, \"maid\": 1500}, \"total\": 21899, \"split_among\": 3, \"per_person\": 7299.67}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Birthday party at home: cake 1200, snacks 800, balloons decorations 400, return gifts 1500, total 3900",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Birthday Party Expenses\", \"details\": {\"event\": \"Birthday party\", \"items\": {\"cake\": 1200, \"snacks\": 800, \"decorations\": 400, \"return_gifts\": 1500}, \"total\": 3900}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Car maintenance April: oil change 800, tyre rotation 500, AC service 1200, wiper blades 350",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Car Maintenance Log April\", \"details\": {\"month\": \"April 2026\", \"services\": [{\"service\": \"oil change\", \"cost\": 800}, {\"service\": \"tyre rotation\", \"cost\": 500}, {\"service\": \"AC service\", \"cost\": 1200}, {\"service\": \"wiper blades\", \"cost\": 350}], \"total\": 2850}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Amazon order Apr 20: USB hub 450, mouse 750, keyboard 1299, mousepad 199, webcam 2199",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Amazon Order Apr 20\", \"details\": {\"platform\": \"Amazon\", \"date\": \"2026-04-20\", \"items\": [{\"name\": \"USB hub\", \"price\": 450}, {\"name\": \"mouse\", \"price\": 750}, {\"name\": \"keyboard\", \"price\": 1299}, {\"name\": \"mousepad\", \"price\": 199}, {\"name\": \"webcam\", \"price\": 2199}], \"total\": 4897}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Active subscriptions: Netflix 649, Spotify 119, Amazon Prime 299, YouTube Premium 189, Hotstar 299",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Monthly Subscriptions Tracker\", \"details\": {\"month\": \"April 2026\", \"subscriptions\": {\"Netflix\": 649, \"Spotify\": 119, \"Amazon_Prime\": 299, \"YouTube_Premium\": 189, \"Hotstar\": 299}, \"total\": 1555}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Kids school annual fees: tuition 45000, transport 12000, books 3500, uniform 2200, activity fees 1800",
+    "assistant": "{\"model\": \"Object\", \"name\": \"School Annual Fees Breakdown\", \"details\": {\"year\": \"2026\", \"breakdown\": {\"tuition\": 45000, \"transport\": 12000, \"books\": 3500, \"uniform\": 2200, \"activity_fees\": 1800}, \"total\": 64500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Weekend trip Coorg: cab 2200, resort 2 nights 7500, food 2800, coffee plantation entry 400, tips 300",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Coorg Weekend Trip\", \"details\": {\"destination\": \"Coorg\", \"breakdown\": {\"cab\": 2200, \"resort_2nights\": 7500, \"food\": 2800, \"entry_fees\": 400, \"tips\": 300}, \"total\": 13200}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Moving expenses: packers movers 8500, cleaning 1200, new lock 350, curtains 1800, electrician 600",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Moving Expenses\", \"details\": {\"breakdown\": {\"packers_movers\": 8500, \"cleaning\": 1200, \"new_lock\": 350, \"curtains\": 1800, \"electrician\": 600}, \"total\": 12450}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Home appliances: washing machine 22000, microwave 8500, mixer grinder 3200, iron 1500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Home Appliance Purchases\", \"details\": {\"items\": [{\"name\": \"washing machine\", \"price\": 22000}, {\"name\": \"microwave\", \"price\": 8500}, {\"name\": \"mixer grinder\", \"price\": 3200}, {\"name\": \"iron\", \"price\": 1500}], \"total\": 35200}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Freelance project expenses: domain 800, hosting 3600/yr, design assets 1500, SSL cert 500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Freelance Project Setup Costs\", \"details\": {\"project\": \"freelance\", \"costs\": {\"domain\": 800, \"hosting_annual\": 3600, \"design_assets\": 1500, \"ssl_cert\": 500}, \"total\": 6400}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Team outing budget: bowling 2000, food 4500, transport 1200, dessert 800, photography 1000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Team Outing Budget\", \"details\": {\"event\": \"team outing\", \"items\": {\"bowling\": 2000, \"food\": 4500, \"transport\": 1200, \"dessert\": 800, \"photography\": 1000}, \"total\": 9500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Client dinner expense claim: restaurant 4200, cab to venue 350, parking 100, total 4650 for 3 clients",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Client Entertainment Claim\", \"details\": {\"purpose\": \"client entertainment\", \"clients_count\": 3, \"breakdown\": {\"restaurant\": 4200, \"cab\": 350, \"parking\": 100}, \"total\": 4650}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Night out with friends: bar tab 1800, Uber pool 240, fast food after 360, total 2400 split 4 ways",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Night Out Expenses\", \"details\": {\"event\": \"night out\", \"items\": {\"bar_tab\": 1800, \"uber_pool\": 240, \"food\": 360}, \"total\": 2400, \"split_among\": 4, \"per_person\": 600}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Study expenses: online course 4999, textbooks 2 nos 1400, notebook and pens 250, course completion exam fee 800",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Study Expenses\", \"details\": {\"category\": \"education\", \"items\": {\"online_course\": 4999, \"textbooks\": 1400, \"stationery\": 250, \"exam_fee\": 800}, \"total\": 7449}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Baby shower party: cake 1800, catering 6000, decorations 2200, invites 400, return gifts 3000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Baby Shower Party Expenses\", \"details\": {\"event\": \"baby shower\", \"items\": {\"cake\": 1800, \"catering\": 6000, \"decorations\": 2200, \"invites\": 400, \"return_gifts\": 3000}, \"total\": 13400}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Pet expenses April: dog food 1200, vet checkup 900, grooming 600, toys 450, treats 200",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Pet Expenses April\", \"details\": {\"month\": \"April 2026\", \"pet\": \"dog\", \"expenses\": {\"food\": 1200, \"vet_checkup\": 900, \"grooming\": 600, \"toys\": 450, \"treats\": 200}, \"total\": 3350}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Photography gear: mirrorless camera 65000, 50mm lens 18000, tripod 2500, memory card 1200, camera bag 3500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Photography Equipment Purchase\", \"details\": {\"items\": [{\"name\": \"mirrorless camera\", \"price\": 65000}, {\"name\": \"50mm lens\", \"price\": 18000}, {\"name\": \"tripod\", \"price\": 2500}, {\"name\": \"memory card\", \"price\": 1200}, {\"name\": \"camera bag\", \"price\": 3500}], \"total\": 90200}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "DIY shelf project: wood planks 1800, brackets 400, screws nails 150, sandpaper 80, paint 350, brush 120",
+    "assistant": "{\"model\": \"Object\", \"name\": \"DIY Shelf Project Materials\", \"details\": {\"project\": \"DIY shelf\", \"materials\": {\"wood_planks\": 1800, \"brackets\": 400, \"screws_nails\": 150, \"sandpaper\": 80, \"paint\": 350, \"brush\": 120}, \"total\": 2900}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Startup office setup: desks 3 nos 18000, chairs 3 nos 12000, printer 15000, whiteboard 3500, AC 35000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Startup Office Setup Costs\", \"details\": {\"items\": [{\"name\": \"desks x3\", \"price\": 18000}, {\"name\": \"chairs x3\", \"price\": 12000}, {\"name\": \"printer\", \"price\": 15000}, {\"name\": \"whiteboard\", \"price\": 3500}, {\"name\": \"AC unit\", \"price\": 35000}], \"total\": 83500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Kirana store monthly bill: rice 5kg 350, dal 2kg 240, oil 1L 180, sugar 1kg 55, salt 20, masalas 320, total 1165",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Kirana Store Monthly Bill\", \"details\": {\"store_type\": \"kirana\", \"items\": [{\"name\": \"rice 5kg\", \"price\": 350}, {\"name\": \"dal 2kg\", \"price\": 240}, {\"name\": \"oil 1L\", \"price\": 180}, {\"name\": \"sugar 1kg\", \"price\": 55}, {\"name\": \"salt\", \"price\": 20}, {\"name\": \"masalas\", \"price\": 320}], \"total\": 1165}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Weekly fuel log: Monday 1200, Wednesday 800, Friday 1100, total 3100",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Weekly Fuel Log\", \"details\": {\"week\": \"April 2026\", \"fill_ups\": [{\"day\": \"Monday\", \"amount\": 1200}, {\"day\": \"Wednesday\", \"amount\": 800}, {\"day\": \"Friday\", \"amount\": 1100}], \"total\": 3100}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Office canteen April: breakfast 1200, lunch 3400, snacks 800, tea coffee 600",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Office Canteen Bill April\", \"details\": {\"month\": \"April 2026\", \"breakdown\": {\"breakfast\": 1200, \"lunch\": 3400, \"snacks\": 800, \"tea_coffee\": 600}, \"total\": 6000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Catering quote for 50 guests: veg buffet 350/head, non-veg add-on 100/head, service 2000, total 24500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Catering Quote 50 Guests\", \"details\": {\"guests\": 50, \"pricing\": {\"veg_buffet_per_head\": 350, \"non_veg_addon_per_head\": 100, \"service_charge\": 2000}, \"total\": 24500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Manali trip note: bus tickets 1600, hostel 4 nights 3200, food 3500, snow activities 2000, souvenirs 800",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Manali Trip Note\", \"details\": {\"destination\": \"Manali\", \"duration\": \"4 nights\", \"breakdown\": {\"bus_tickets\": 1600, \"hostel\": 3200, \"food\": 3500, \"activities\": 2000, \"souvenirs\": 800}, \"total\": 11100}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Health & fitness April: gym 2000, protein powder 1800, vitamins 650, yoga mat 1200, sports shoes 2999",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Health and Fitness Expenses April\", \"details\": {\"month\": \"April 2026\", \"items\": {\"gym\": 2000, \"protein_powder\": 1800, \"vitamins\": 650, \"yoga_mat\": 1200, \"sports_shoes\": 2999}, \"total\": 8649}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Annual vacation budget: flights 22000, resort 7 nights 35000, food 12000, sightseeing 8000, shopping 10000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Annual Family Vacation Budget\", \"details\": {\"trip_type\": \"annual vacation\", \"duration\": \"7 nights\", \"breakdown\": {\"flights\": 22000, \"resort\": 35000, \"food\": 12000, \"sightseeing\": 8000, \"shopping\": 10000}, \"total\": 87000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Home repair: electrician 1500, plumber 800, carpenter 2200, painting small wall 1000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Home Repair Workers Log\", \"details\": {\"workers\": [{\"trade\": \"electrician\", \"charge\": 1500}, {\"trade\": \"plumber\", \"charge\": 800}, {\"trade\": \"carpenter\", \"charge\": 2200}, {\"trade\": \"painter\", \"charge\": 1000}], \"total\": 5500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Vendor invoice Raj Enterprises: material supply 15000, labour 8000, GST 18% 4140, total 27140",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Vendor Invoice Raj Enterprises\", \"details\": {\"vendor\": \"Raj Enterprises\", \"line_items\": {\"material_supply\": 15000, \"labour\": 8000, \"gst_18pct\": 4140}, \"total\": 27140}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Sports equipment: cricket bat 1800, helmet 1200, pads set 1500, gloves 600, kit bag 2000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Cricket Sports Equipment\", \"details\": {\"sport\": \"cricket\", \"items\": [{\"name\": \"bat\", \"price\": 1800}, {\"name\": \"helmet\", \"price\": 1200}, {\"name\": \"pads set\", \"price\": 1500}, {\"name\": \"gloves\", \"price\": 600}, {\"name\": \"kit bag\", \"price\": 2000}], \"total\": 7100}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Kitchen supplies: pressure cooker 2200, non-stick pan 1400, spatulas 300, water bottles 600, lunch box 450",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Kitchen Supplies Purchase\", \"details\": {\"items\": {\"pressure_cooker\": 2200, \"non_stick_pan\": 1400, \"spatulas\": 300, \"water_bottles\": 600, \"lunch_box\": 450}, \"total\": 4950}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Reimbursement claim May: taxi 350, client lunch 1800, stationery 420, courier 120, total 2690",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Reimbursement Claim\", \"details\": {\"claimant\": \"employee\", \"month\": \"May 2026\", \"items\": {\"taxi\": 350, \"client_lunch\": 1800, \"stationery\": 420, \"courier\": 120}, \"total\": 2690}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Saturday market haul: fish 2kg 400, vegetables 180, mangoes 1kg 120, coconut 40, flowers 60",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Saturday Market Shopping\", \"details\": {\"items\": [{\"name\": \"fish 2kg\", \"price\": 400}, {\"name\": \"vegetables\", \"price\": 180}, {\"name\": \"mangoes 1kg\", \"price\": 120}, {\"name\": \"coconut\", \"price\": 40}, {\"name\": \"flowers\", \"price\": 60}], \"total\": 800}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Christmas gifts: wife 3000, kids x2 2500 each, parents 2000, friends exchange 500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Christmas Gift Expenses\", \"details\": {\"festival\": \"Christmas\", \"gifts\": {\"wife\": 3000, \"kids_x2\": 5000, \"parents\": 2000, \"friends_exchange\": 500}, \"total\": 10500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Office stationery bulk: A4 reams x5 2000, pens box 350, markers 200, folders 400, printer ink x2 1800",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Office Stationery Bulk Order\", \"details\": {\"items\": {\"A4_reams_x5\": 2000, \"pens_box\": 350, \"markers\": 200, \"folders\": 400, \"printer_ink_x2\": 1800}, \"total\": 4750}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Staff welfare March: lunch 8000, birthday cakes 1500, team snacks 2000, farewell gift 1200",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Staff Welfare Expenses March\", \"details\": {\"month\": \"March 2026\", \"items\": {\"staff_lunch\": 8000, \"birthday_cakes\": 1500, \"team_snacks\": 2000, \"farewell_gift\": 1200}, \"total\": 12700}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Laptop setup: laptop 72000, bag 1500, cooling pad 800, external SSD 4500, HDMI cable 350",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Laptop and Accessories Purchase\", \"details\": {\"items\": [{\"name\": \"laptop\", \"price\": 72000}, {\"name\": \"laptop bag\", \"price\": 1500}, {\"name\": \"cooling pad\", \"price\": 800}, {\"name\": \"external SSD\", \"price\": 4500}, {\"name\": \"HDMI cable\", \"price\": 350}], \"total\": 79150}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Monthly housing log Apr: rent 14000, electricity 1200, water 340, maintenance 500, parking 600",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Monthly Housing Log April\", \"details\": {\"month\": \"April 2026\", \"breakdown\": {\"rent\": 14000, \"electricity\": 1200, \"water\": 340, \"maintenance\": 500, \"parking\": 600}, \"total\": 16640}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Building maintenance society charges: security 3000, cleaning 2000, garden 800, lift 1500, total 7300 this quarter",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Building Society Maintenance Charges\", \"details\": {\"period\": \"Q1 2026\", \"breakdown\": {\"security\": 3000, \"cleaning\": 2000, \"garden\": 800, \"lift_maintenance\": 1500}, \"total\": 7300}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "AWS cloud bill April: EC2 1200, RDS 800, S3 150, CloudFront 300, Route53 50, total 2500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"AWS Cloud Bill April\", \"details\": {\"provider\": \"AWS\", \"month\": \"April 2026\", \"services\": {\"EC2\": 1200, \"RDS\": 800, \"S3\": 150, \"CloudFront\": 300, \"Route53\": 50}, \"total\": 2500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Online tools & SaaS April: Figma 800, GitHub 400, Notion 300, Slack 500, Zoom 1300, total 3300",
+    "assistant": "{\"model\": \"Object\", \"name\": \"SaaS Tools Monthly Bill\", \"details\": {\"month\": \"April 2026\", \"tools\": {\"Figma\": 800, \"GitHub\": 400, \"Notion\": 300, \"Slack\": 500, \"Zoom\": 1300}, \"total\": 3300}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label for the record), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Wedding shopping list: lehenga 25000, jewellery 40000, makeup artist 8000, venue decor 15000, catering deposit 20000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Wedding Shopping Expenses\", \"details\": {\"event\": \"wedding\", \"items\": {\"lehenga\": 25000, \"jewellery\": 40000, \"makeup_artist\": 8000, \"venue_decor\": 15000, \"catering_deposit\": 20000}, \"total\": 108000}}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Paid 299 for Swiggy Instamart delivery",
+    "assistant": "{\"amount\": 299.0, \"category\": \"Groceries\", \"date\": null, \"description\": \"Swiggy Instamart delivery\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "parking challan paid 500 on april 22",
+    "assistant": "{\"amount\": 500.0, \"category\": \"Transport\", \"date\": \"2026-04-22\", \"description\": \"Parking challan\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "school bus fees for April 1800",
+    "assistant": "{\"amount\": 1800.0, \"category\": \"Education\", \"date\": null, \"description\": \"School bus fees April\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought a novel from Crossword 450",
+    "assistant": "{\"amount\": 450.0, \"category\": \"Books\", \"date\": null, \"description\": \"Novel from Crossword bookstore\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "eye checkup and new glasses 4500",
+    "assistant": "{\"amount\": 4500.0, \"category\": \"Healthcare\", \"date\": null, \"description\": \"Eye checkup and glasses\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "grocery delivery from BigBasket 890",
+    "assistant": "{\"amount\": 890.0, \"category\": \"Groceries\", \"date\": null, \"description\": \"BigBasket grocery delivery\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "office lunch 180 today",
+    "assistant": "{\"amount\": 180.0, \"category\": \"Food\", \"date\": null, \"description\": \"Office lunch\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Swiggy One annual subscription 299",
+    "assistant": "{\"amount\": 299.0, \"category\": \"Subscriptions\", \"date\": null, \"description\": \"Swiggy One subscription\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "courier sent parcel 120 rupees",
+    "assistant": "{\"amount\": 120.0, \"category\": \"Miscellaneous\", \"date\": null, \"description\": \"Courier parcel sent\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "house cleaning maid 800 monthly",
+    "assistant": "{\"amount\": 800.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Monthly maid cleaning charge\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "taxi to hospital 220",
+    "assistant": "{\"amount\": 220.0, \"category\": \"Transport\", \"date\": null, \"description\": \"Taxi to hospital\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "dry fruits pack 680 from store",
+    "assistant": "{\"amount\": 680.0, \"category\": \"Groceries\", \"date\": null, \"description\": \"Dry fruits from store\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "passport renewal fees paid 1500 on april 18",
+    "assistant": "{\"amount\": 1500.0, \"category\": \"Government Fees\", \"date\": \"2026-04-18\", \"description\": \"Passport renewal fees\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "drawing colors for daughter 380",
+    "assistant": "{\"amount\": 380.0, \"category\": \"Education\", \"date\": null, \"description\": \"Drawing colors for daughter\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "internet plan upgraded to 1499 per month",
+    "assistant": "{\"amount\": 1499.0, \"category\": \"Utilities\", \"date\": null, \"description\": \"Internet plan upgrade\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "society maintenance paid 2500",
+    "assistant": "{\"amount\": 2500.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Society maintenance charge\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "trekking shoes 3499",
+    "assistant": "{\"amount\": 3499.0, \"category\": \"Clothing\", \"date\": null, \"description\": \"Trekking shoes\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "yoga class monthly 1200",
+    "assistant": "{\"amount\": 1200.0, \"category\": \"Health & Fitness\", \"date\": null, \"description\": \"Monthly yoga class fee\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "LPG cooking gas refill 950 on april 7",
+    "assistant": "{\"amount\": 950.0, \"category\": \"Utilities\", \"date\": \"2026-04-07\", \"description\": \"LPG gas refill\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "pillow and bedsheet set 1800",
+    "assistant": "{\"amount\": 1800.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Pillow and bedsheet set\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "paid cook salary 4000",
+    "assistant": "{\"amount\": 4000.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Cook monthly salary\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "vehicle road tax paid 2800",
+    "assistant": "{\"amount\": 2800.0, \"category\": \"Transport\", \"date\": null, \"description\": \"Vehicle road tax\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "new watch Casio 5999",
+    "assistant": "{\"amount\": 5999.0, \"category\": \"Accessories\", \"date\": null, \"description\": \"Casio watch purchase\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "donation to temple 501",
+    "assistant": "{\"amount\": 501.0, \"category\": \"Donations\", \"date\": null, \"description\": \"Temple donation\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "blood pressure monitor 1200",
+    "assistant": "{\"amount\": 1200.0, \"category\": \"Healthcare\", \"date\": null, \"description\": \"Blood pressure monitor\"}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "KFC receipt: zinger burger 249, fries 99, pepsi 89, total 437",
+    "assistant": "{\"model\": \"Object\", \"name\": \"KFC Receipt\", \"details\": {\"restaurant\": \"KFC\", \"items\": [{\"name\": \"zinger burger\", \"price\": 249}, {\"name\": \"fries\", \"price\": 99}, {\"name\": \"pepsi\", \"price\": 89}], \"total\": 437}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Conference expense report: registration 5000, hotel 2 nights 8000, travel 3200, food 2400",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Conference Expense Report\", \"details\": {\"breakdown\": {\"registration\": 5000, \"hotel_2nights\": 8000, \"travel\": 3200, \"food\": 2400}, \"total\": 18600}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Kids birthday party: venue 8000, cake 2000, games 1500, catering 6000, return gifts 2500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Kids Birthday Party Expenses\", \"details\": {\"event\": \"birthday party\", \"items\": {\"venue\": 8000, \"cake\": 2000, \"games\": 1500, \"catering\": 6000, \"return_gifts\": 2500}, \"total\": 20000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Home office setup: desk 8500, monitor 22000, chair 6000, lamp 800, cables 400",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Home Office Setup\", \"details\": {\"items\": [{\"name\": \"desk\", \"price\": 8500}, {\"name\": \"monitor\", \"price\": 22000}, {\"name\": \"chair\", \"price\": 6000}, {\"name\": \"lamp\", \"price\": 800}, {\"name\": \"cables\", \"price\": 400}], \"total\": 37700}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Road trip Delhi-Agra: fuel 3200, toll 480, food 1800, parking 200, entry tickets 1050",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Delhi-Agra Road Trip\", \"details\": {\"trip\": \"Delhi to Agra\", \"breakdown\": {\"fuel\": 3200, \"toll\": 480, \"food\": 1800, \"parking\": 200, \"entry_tickets\": 1050}, \"total\": 6730}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Monthly grocery big shop: rice 10kg 700, wheat 600, dal 360, oil 480, spices 400, tea 250",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Monthly Big Grocery Shop\", \"details\": {\"items\": [{\"name\": \"rice 10kg\", \"price\": 700}, {\"name\": \"wheat 10kg\", \"price\": 600}, {\"name\": \"dal 3kg\", \"price\": 360}, {\"name\": \"cooking oil 3L\", \"price\": 480}, {\"name\": \"spices\", \"price\": 400}, {\"name\": \"tea\", \"price\": 250}], \"total\": 2790}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Music gear: guitar 12000, tuner 500, capo 250, strings 350, strap 300",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Music Gear Purchase\", \"details\": {\"items\": {\"guitar\": 12000, \"tuner\": 500, \"capo\": 250, \"strings\": 350, \"strap\": 300}, \"total\": 13400}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Gym supplements April: protein powder 1800, creatine 900, pre-workout 1200, vitamins 650, chicken breast 5kg 1500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Gym Supplements April\", \"details\": {\"month\": \"April 2026\", \"items\": {\"protein_powder\": 1800, \"creatine\": 900, \"pre_workout\": 1200, \"vitamins\": 650, \"chicken_5kg\": 1500}, \"total\": 6050}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Hostel semester expenses: semester fee 45000, mess 8000, laundry 1200, stationery 800",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Hostel Semester Expenses\", \"details\": {\"semester\": \"sem 2026\", \"breakdown\": {\"semester_fee\": 45000, \"mess\": 8000, \"laundry\": 1200, \"stationery\": 800}, \"total\": 55000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Baby essentials: diapers 1200, formula milk 2400, baby oil 200, wipes 180, baby clothes 1500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Baby Essentials Shopping\", \"details\": {\"items\": {\"diapers\": 1200, \"formula_milk\": 2400, \"baby_oil\": 200, \"wipes\": 180, \"baby_clothes\": 1500}, \"total\": 5480}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Housewarming party: catering 15000, flowers 2000, gifts 5000, bartender 3000, DJ 8000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Housewarming Party Expenses\", \"details\": {\"event\": \"housewarming\", \"items\": {\"catering\": 15000, \"flowers\": 2000, \"gifts\": 5000, \"bartender\": 3000, \"dj\": 8000}, \"total\": 33000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Quarterly car expenses: insurance 12000, service 3500, fuel 9000, parking 1800, challans 500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Quarterly Car Expenses\", \"details\": {\"period\": \"Q1 2026\", \"breakdown\": {\"insurance\": 12000, \"service\": 3500, \"fuel\": 9000, \"parking\": 1800, \"challans\": 500}, \"total\": 26800}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Freelance monthly costs: coworking 5000, electricity 800, coffee 600, SaaS tools 2400",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Freelance Monthly Costs\", \"details\": {\"month\": \"April 2026\", \"items\": {\"coworking_space\": 5000, \"electricity\": 800, \"coffee\": 600, \"saas_tools\": 2400}, \"total\": 8800}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Annual health checkup: full body test 3200, ECG 600, X-ray 800, consultation 700, medicines 450",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Annual Health Checkup Bill\", \"details\": {\"hospital\": \"diagnostic center\", \"tests\": {\"full_body\": 3200, \"ecg\": 600, \"xray\": 800, \"consultation\": 700, \"medicines\": 450}, \"total\": 5750}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Beach trip packing: sunscreen 350, sunglasses 1200, flip flops 600, beach bag 800, travel kit 450",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Beach Trip Shopping\", \"details\": {\"items\": {\"sunscreen\": 350, \"sunglasses\": 1200, \"flip_flops\": 600, \"beach_bag\": 800, \"travel_kit\": 450}, \"total\": 3400}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Home painting job: labour 8000, paint 2 buckets 4500, primer 1200, rollers and brushes 600",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Home Painting Job\", \"details\": {\"breakdown\": {\"labour\": 8000, \"paint_2buckets\": 4500, \"primer\": 1200, \"tools\": 600}, \"total\": 14300}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Kids art supplies: sketch pens 200, drawing book 150, watercolors 350, clay 180, glitter 100",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Kids Art Supplies\", \"details\": {\"items\": {\"sketch_pens\": 200, \"drawing_book\": 150, \"watercolors\": 350, \"clay\": 180, \"glitter\": 100}, \"total\": 980}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Employee expense claim week Apr 14-18: cab 480, printing 220, client snack 650, parking 150",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Employee Expense Claim Apr 14-18\", \"details\": {\"week\": \"2026-04-14 to 2026-04-18\", \"items\": {\"cab\": 480, \"printing\": 220, \"client_snack\": 650, \"parking\": 150}, \"total\": 1500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Diwali office celebration: sweets 3000, decorations 1500, team lunch 5000, staff gifts 4000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Diwali Office Celebration\", \"details\": {\"event\": \"Diwali celebration\", \"items\": {\"sweets_boxes\": 3000, \"decorations\": 1500, \"team_lunch\": 5000, \"staff_gifts\": 4000}, \"total\": 13500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Festival travel family x4: train tickets 7200, hotel 2 nights 6000, sightseeing 3500, food 4000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Festival Family Travel\", \"details\": {\"travelers\": 4, \"breakdown\": {\"train_tickets_x4\": 7200, \"hotel_2nights\": 6000, \"sightseeing\": 3500, \"food\": 4000}, \"total\": 20700}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "PC build: CPU 18000, motherboard 12000, RAM 16GB 4500, SSD 4000, cabinet 3500, PSU 4500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"PC Build Components\", \"details\": {\"components\": [{\"part\": \"CPU\", \"price\": 18000}, {\"part\": \"motherboard\", \"price\": 12000}, {\"part\": \"RAM 16GB\", \"price\": 4500}, {\"part\": \"SSD 500GB\", \"price\": 4000}, {\"part\": \"cabinet\", \"price\": 3500}, {\"part\": \"PSU\", \"price\": 4500}], \"total\": 46500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Family subscription bundle: Apple One 1099, Disney+ Hotstar 299, Audible 199, Kindle Unlimited 169",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Family Subscription Bundle\", \"details\": {\"subscriptions\": {\"Apple_One\": 1099, \"DisneyPlus_Hotstar\": 299, \"Audible\": 199, \"Kindle_Unlimited\": 169}, \"total\": 1766}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Petty cash week Apr 21-25: refreshments 350, stationery 180, courier 90, misc 120",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Petty Cash Week Apr 21-25\", \"details\": {\"week\": \"2026-04-21 to 2026-04-25\", \"entries\": {\"refreshments\": 350, \"stationery\": 180, \"courier\": 90, \"misc\": 120}, \"total\": 740}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Kitchen remodel: countertop 18000, sink 4500, faucet 2200, tiles 8000, labour 12000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Kitchen Remodel Costs\", \"details\": {\"breakdown\": {\"countertop\": 18000, \"sink\": 4500, \"faucet\": 2200, \"tiles\": 8000, \"labour\": 12000}, \"total\": 44700}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Corporate training day: trainer fee 15000, venue 8000, materials 2500, lunch 20 pax 6000, certificates 1000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Corporate Training Day Expenses\", \"details\": {\"attendees\": 20, \"breakdown\": {\"trainer_fee\": 15000, \"venue\": 8000, \"materials\": 2500, \"lunch\": 6000, \"certificates\": 1000}, \"total\": 32500}}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought sunglasses for 899",
+    "assistant": "{\"amount\": 899.0, \"category\": \"Accessories\", \"date\": null, \"description\": \"Sunglasses\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "paid 3200 for annual car insurance renewal on april 4",
+    "assistant": "{\"amount\": 3200.0, \"category\": \"Insurance\", \"date\": \"2026-04-04\", \"description\": \"Annual car insurance renewal\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Meesho order 560 rupees",
+    "assistant": "{\"amount\": 560.0, \"category\": \"Clothing\", \"date\": null, \"description\": \"Meesho online order\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "swimming pool monthly membership 1800",
+    "assistant": "{\"amount\": 1800.0, \"category\": \"Health & Fitness\", \"date\": null, \"description\": \"Swimming pool monthly membership\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought thermometer 250",
+    "assistant": "{\"amount\": 250.0, \"category\": \"Healthcare\", \"date\": null, \"description\": \"Thermometer\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "office snacks team 400",
+    "assistant": "{\"amount\": 400.0, \"category\": \"Food\", \"date\": null, \"description\": \"Office team snacks\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "paid 750 for car wash and vacuum",
+    "assistant": "{\"amount\": 750.0, \"category\": \"Vehicle Maintenance\", \"date\": null, \"description\": \"Car wash and vacuum\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "ChatGPT Plus subscription 1700",
+    "assistant": "{\"amount\": 1700.0, \"category\": \"Subscriptions\", \"date\": null, \"description\": \"ChatGPT Plus subscription\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "wedding hall deposit 25000 on april 12",
+    "assistant": "{\"amount\": 25000.0, \"category\": \"Events\", \"date\": \"2026-04-12\", \"description\": \"Wedding hall booking deposit\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought kitchen mixer 3500",
+    "assistant": "{\"amount\": 3500.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Kitchen mixer grinder\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "rickshaw to market 50 rupees",
+    "assistant": "{\"amount\": 50.0, \"category\": \"Transport\", \"date\": null, \"description\": \"Rickshaw to market\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "monthly newspaper and magazine subscription 180",
+    "assistant": "{\"amount\": 180.0, \"category\": \"Subscriptions\", \"date\": null, \"description\": \"Newspaper and magazine subscription\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought inhaler from medical store 340 on april 9",
+    "assistant": "{\"amount\": 340.0, \"category\": \"Healthcare\", \"date\": \"2026-04-09\", \"description\": \"Inhaler from medical store\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Ola cab to railway station 280",
+    "assistant": "{\"amount\": 280.0, \"category\": \"Transport\", \"date\": null, \"description\": \"Ola cab to railway station\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought wall clock 650",
+    "assistant": "{\"amount\": 650.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Wall clock\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "paid 4200 for dental cleaning and checkup",
+    "assistant": "{\"amount\": 4200.0, \"category\": \"Healthcare\", \"date\": null, \"description\": \"Dental cleaning and checkup\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "recharge DTH 399",
+    "assistant": "{\"amount\": 399.0, \"category\": \"Utilities\", \"date\": null, \"description\": \"DTH recharge\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought flowers for wife 120",
+    "assistant": "{\"amount\": 120.0, \"category\": \"Gifts\", \"date\": null, \"description\": \"Flowers for wife\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "parking monthly pass office 1200 on april 1",
+    "assistant": "{\"amount\": 1200.0, \"category\": \"Transport\", \"date\": \"2026-04-01\", \"description\": \"Monthly office parking pass\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "new cooking pot set 1150",
+    "assistant": "{\"amount\": 1150.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Cooking pot set\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "salary to driver 6000 for april",
+    "assistant": "{\"amount\": 6000.0, \"category\": \"Home Maintenance\", \"date\": null, \"description\": \"Driver salary April\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "bought hand sanitizer and masks 220",
+    "assistant": "{\"amount\": 220.0, \"category\": \"Healthcare\", \"date\": null, \"description\": \"Hand sanitizer and masks\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "cricket match tickets 600 on april 20",
+    "assistant": "{\"amount\": 600.0, \"category\": \"Entertainment\", \"date\": \"2026-04-20\", \"description\": \"Cricket match tickets\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "Coursera monthly plan 2999",
+    "assistant": "{\"amount\": 2999.0, \"category\": \"Education\", \"date\": null, \"description\": \"Coursera monthly subscription\"}"
+  },
+  {
+    "system": "You are an expense parsing assistant. Extract structured expense data from natural language and return a JSON object with fields: amount (decimal), category (string), date (YYYY-MM-DD or null if not mentioned), description (string, can be empty). Only return valid JSON, no extra text.",
+    "user": "clothes dry cleaning 480",
+    "assistant": "{\"amount\": 480.0, \"category\": \"Personal Care\", \"date\": null, \"description\": \"Dry cleaning clothes\"}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Zomato order receipt: butter chicken 380, naan x2 80, raita 60, delivery 25, total 545",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Zomato Order Receipt\", \"details\": {\"platform\": \"Zomato\", \"items\": [{\"name\": \"butter chicken\", \"price\": 380}, {\"name\": \"naan x2\", \"price\": 80}, {\"name\": \"raita\", \"price\": 60}, {\"name\": \"delivery fee\", \"price\": 25}], \"total\": 545}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Salary breakdown April: basic 45000, HRA 15000, TA 3000, medical 1250, deductions PF 5400 + TDS 4200",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Salary Breakdown April\", \"details\": {\"month\": \"April 2026\", \"earnings\": {\"basic\": 45000, \"hra\": 15000, \"ta\": 3000, \"medical\": 1250}, \"deductions\": {\"pf\": 5400, \"tds\": 4200}, \"gross\": 64250, \"net\": 54650}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "trek Himachal 5 days: bus 1800, homestay 4 nights 6000, food 2500, guide 3000, gear rent 1200",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Himachal Trek 5 Days\", \"details\": {\"destination\": \"Himachal Pradesh\", \"duration\": \"5 days\", \"breakdown\": {\"bus\": 1800, \"homestay_4nights\": 6000, \"food\": 2500, \"guide\": 3000, \"gear_rental\": 1200}, \"total\": 14500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Furniture bought: sofa 18000, dining table 12000, TV unit 8500, bookshelf 5500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Furniture Purchase\", \"details\": {\"items\": [{\"name\": \"sofa\", \"price\": 18000}, {\"name\": \"dining table\", \"price\": 12000}, {\"name\": \"TV unit\", \"price\": 8500}, {\"name\": \"bookshelf\", \"price\": 5500}], \"total\": 44000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Raksha Bandhan gifts: rakhi for brothers x3 900, sweets 600, sister gift 2500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Raksha Bandhan Gifts\", \"details\": {\"festival\": \"Raksha Bandhan\", \"items\": {\"rakhi_x3\": 900, \"sweets\": 600, \"sister_gift\": 2500}, \"total\": 4000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Monthly food delivery apps total: Zomato 1840, Swiggy 2200, Blinkit 650",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Monthly Food Delivery Spend\", \"details\": {\"month\": \"April 2026\", \"platforms\": {\"Zomato\": 1840, \"Swiggy\": 2200, \"Blinkit\": 650}, \"total\": 4690}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Engagement ceremony costs: catering 40000, decor 15000, photography 25000, invitations 3000, venue 30000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Engagement Ceremony Expenses\", \"details\": {\"event\": \"engagement\", \"breakdown\": {\"catering\": 40000, \"decor\": 15000, \"photography\": 25000, \"invitations\": 3000, \"venue\": 30000}, \"total\": 113000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Tech stack monthly costs: AWS 2500, GitHub 400, Figma 800, Vercel 600, Postman 400",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Tech Stack Monthly Costs\", \"details\": {\"month\": \"April 2026\", \"tools\": {\"AWS\": 2500, \"GitHub\": 400, \"Figma\": 800, \"Vercel\": 600, \"Postman\": 400}, \"total\": 4700}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "College reunion trip: train 1200, hotel split 2200, food 1800, entry bars 900, cab 400",
+    "assistant": "{\"model\": \"Object\", \"name\": \"College Reunion Trip\", \"details\": {\"event\": \"college reunion\", \"breakdown\": {\"train\": 1200, \"hotel_split\": 2200, \"food\": 1800, \"entry_bars\": 900, \"cab\": 400}, \"total\": 6500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Home security setup: CCTV camera x2 8000, DVR 3500, installation 2000, hard disk 2500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Home Security Setup\", \"details\": {\"items\": {\"cctv_x2\": 8000, \"dvr\": 3500, \"installation\": 2000, \"hard_disk\": 2500}, \"total\": 16000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Side hustle expenses March: domain renewal 800, tools 1500, freelancer pay 5000, ads 2000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Side Hustle Expenses March\", \"details\": {\"month\": \"March 2026\", \"items\": {\"domain_renewal\": 800, \"tools\": 1500, \"freelancer_pay\": 5000, \"ads\": 2000}, \"total\": 9300}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Anniversary dinner: restaurant 4800, flowers 400, gift for wife 3500, cab 320",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Anniversary Dinner Expenses\", \"details\": {\"event\": \"anniversary\", \"items\": {\"restaurant\": 4800, \"flowers\": 400, \"gift\": 3500, \"cab\": 320}, \"total\": 9020}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Grocery haul Reliance Smart: atta 5kg 240, rice 5kg 350, toor dal 2kg 280, paneer 500gm 110, curd 1kg 80",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Reliance Smart Grocery Haul\", \"details\": {\"store\": \"Reliance Smart\", \"items\": [{\"name\": \"atta 5kg\", \"price\": 240}, {\"name\": \"rice 5kg\", \"price\": 350}, {\"name\": \"toor dal 2kg\", \"price\": 280}, {\"name\": \"paneer 500gm\", \"price\": 110}, {\"name\": \"curd 1kg\", \"price\": 80}], \"total\": 1060}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "New phone accessories: screen guard 200, phone case 350, fast charger 899, earphones 1299",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Phone Accessories Purchase\", \"details\": {\"items\": {\"screen_guard\": 200, \"phone_case\": 350, \"fast_charger\": 899, \"earphones\": 1299}, \"total\": 2748}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Running club monthly: registration 500, running shoes 3499, sports socks x3 450, energy gels 360",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Running Club Monthly Expenses\", \"details\": {\"month\": \"April 2026\", \"items\": {\"registration\": 500, \"running_shoes\": 3499, \"sports_socks_x3\": 450, \"energy_gels\": 360}, \"total\": 4809}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Bathroom renovation: tiles 12000, sanitaryware 18000, plumber 6000, waterproofing 4000, accessories 2500",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Bathroom Renovation\", \"details\": {\"breakdown\": {\"tiles\": 12000, \"sanitaryware\": 18000, \"plumber\": 6000, \"waterproofing\": 4000, \"accessories\": 2500}, \"total\": 42500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "End of year bonus spend: vacation 45000, home improvement 20000, savings FD 50000, gadgets 15000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Bonus Allocation Plan\", \"details\": {\"allocation\": {\"vacation\": 45000, \"home_improvement\": 20000, \"savings_fd\": 50000, \"gadgets\": 15000}, \"total_bonus\": 130000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Weekly tiffin service April week 3: Mon-Fri lunch 5 days x 120 = 600, dinner 5 days x 150 = 750",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Tiffin Service Week Apr Week 3\", \"details\": {\"week\": \"2026-04-14 to 2026-04-18\", \"meals\": {\"lunch_5days\": 600, \"dinner_5days\": 750}, \"total\": 1350}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Pet vet bill: consultation 500, vaccination 1200, deworming 400, flea treatment 600, follow-up 300",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Pet Vet Bill\", \"details\": {\"pet\": \"dog\", \"items\": {\"consultation\": 500, \"vaccination\": 1200, \"deworming\": 400, \"flea_treatment\": 600, \"follow_up\": 300}, \"total\": 3000}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Office relocation costs: movers 12000, new furniture 35000, IT setup 8000, signage 4500, deposits 20000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Office Relocation Costs\", \"details\": {\"breakdown\": {\"movers\": 12000, \"new_furniture\": 35000, \"it_setup\": 8000, \"signage\": 4500, \"deposits\": 20000}, \"total\": 79500}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Groceries from local sabziwala + kirana: potatoes 2kg 50, onions 2kg 60, tomatoes 1kg 40, milk 2L 90, bread 35",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Local Market Daily Shopping\", \"details\": {\"items\": [{\"name\": \"potatoes 2kg\", \"price\": 50}, {\"name\": \"onions 2kg\", \"price\": 60}, {\"name\": \"tomatoes 1kg\", \"price\": 40}, {\"name\": \"milk 2L\", \"price\": 90}, {\"name\": \"bread\", \"price\": 35}], \"total\": 275}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Travel insurance for Europe trip: premium 4800, covers medical 5L, trip cancellation 1L",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Travel Insurance Europe Trip\", \"details\": {\"type\": \"travel insurance\", \"destination\": \"Europe\", \"premium\": 4800, \"coverage\": {\"medical\": 500000, \"trip_cancellation\": 100000}}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Monthly transport log April: Ola/Uber 2400, metro pass 800, auto 650, fuel 3200, parking 600",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Monthly Transport Log April\", \"details\": {\"month\": \"April 2026\", \"breakdown\": {\"ola_uber\": 2400, \"metro_pass\": 800, \"auto\": 650, \"fuel\": 3200, \"parking\": 600}, \"total\": 7650}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Charity event organisation: venue 5000, banner printing 1200, refreshments 3000, volunteers t-shirts 4000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Charity Event Organisation Costs\", \"details\": {\"event\": \"charity\", \"items\": {\"venue\": 5000, \"banner_printing\": 1200, \"refreshments\": 3000, \"volunteer_tshirts\": 4000}, \"total\": 13200}}"
+  },
+  {
+    "system": "You are a hybrid expense parsing assistant. If the input is a single clear expense, return JSON with \"model\": \"Expense\" and fields: amount, category, date (YYYY-MM-DD or null), description. If the input is unstructured — a receipt with multiple items, a shared bill, a log, a note, or anything that cannot fit one expense record — return JSON with \"model\": \"Object\", \"name\" (short label), and \"details\" (a flexible JSON object with all extracted info). Only return valid JSON, no extra text.",
+    "user": "Gaming setup: PS5 console 54999, extra controller 5499, gaming headset 3999, 4K TV 65000",
+    "assistant": "{\"model\": \"Object\", \"name\": \"Gaming Setup Purchase\", \"details\": {\"items\": [{\"name\": \"PS5 console\", \"price\": 54999}, {\"name\": \"extra controller\", \"price\": 5499}, {\"name\": \"gaming headset\", \"price\": 3999}, {\"name\": \"4K TV\", \"price\": 65000}], \"total\": 129497}}"
+  }
+]

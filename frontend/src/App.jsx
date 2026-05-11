@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar'
 import DashboardCard from './components/DashboardCard'
 import TransactionsTab from './components/TransactionsTab'
 import ObjectsTab from './components/ObjectsTab'
+import ChatbotPanel from './components/ChatbotPanel'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -58,6 +59,9 @@ function App() {
           <ObjectsTab activeTab={activeTab} objects={objects} setObjects={setObjects} />
         </div>
       </main>
+
+      {/* AI Chatbot — floats over all tabs */}
+      <ChatbotPanel setExpenses={setExpenses} setObjects={setObjects} />
     </div>
   )
 }

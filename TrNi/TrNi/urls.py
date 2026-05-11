@@ -27,5 +27,7 @@ router.register(r'objects', views.ObjectViewSet)
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
+    path("api/chat/", views.chat_parse, name="chat_parse"),
     path("api-auth/", include('rest_framework.urls', namespace='rest_framework')),
 ]
+
