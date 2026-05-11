@@ -102,3 +102,12 @@ This website uses Django Rest Framework and React to build an intuitive platform
           Serializer validates → saves to correct DB
                   ↓
           Frontend refreshes the correct tab automatically
+
+## Steps to replicate into a local device
+
+### Step 1 - Pre-requisites
+          Check whether you have the following installed:
+          1. Python - 3.11 or higher
+          2. Nodejs - 18 or higher, visit the website for the latest version
+          3. MonogDB Community 6.0 or higher, visit the website for the latest version
+          4. 
